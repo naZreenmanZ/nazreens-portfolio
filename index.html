@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nazreen’s AWS Site</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">TGO • Labs</div>
+    <nav>
+      <a class="active" href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Deployed on AWS 🚀</h1>
+      <p>
+        This is my first end-to-end project: code → git → deploy → live URL.
+      </p>
+      <div class="cta">
+        <a class="btn" href="./about.html">See what I’m building</a>
+        <a class="btn ghost" href="./contact.html">Contact</a>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Project 1</h3>
+        <p>Static HTML hosted on S3 + CloudFront.</p>
+      </article>
+      <article class="card">
+        <h3>Project 2</h3>
+        <p>MERN app deployed with CI/CD.</p>
+      </article>
+      <article class="card">
+        <h3>Project 3</h3>
+        <p>RAG app with embeddings + vector DB.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Nazreen • Built & deployed on AWS</span>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
